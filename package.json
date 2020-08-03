@@ -1,6 +1,6 @@
 {
   "name": "@qietuzi/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A js library for common utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

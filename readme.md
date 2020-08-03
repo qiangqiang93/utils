@@ -40,3 +40,20 @@ env.shellVersion();
 env.getEnvs();
 // return all
 ```
+
+#### lang
+
+a utils to judge **character's** language.
+
+```js
+import { lang } from "@qietuzi/utils";
+// 获取单个字符所属的语言类型（详情）
+// get language of a single character
+getLang(s: string): string
+// 获取字符串中包含的语言类型
+// get a languages list of a string
+getLangs(str: string): Array<string>
+// 获取字符串中每一个字符的语言类型
+// get each character's languages list of a string
+getEachLangs(str: string): Array<string>
+```
