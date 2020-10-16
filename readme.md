@@ -57,3 +57,17 @@ getLangs(str: string): Array<string>
 // get each character's languages list of a string
 getEachLangs(str: string): Array<string>
 ```
+
+#### number
+
+```js
+import { number } from "@qietuzi/utils";
+/* 
+// 数字，数字字符串前补零
+// number,number string zero fill
+// zeroFill(9)      =>  '09'
+// zeroFill(9, 3)   =>  '009'
+// warn:最大不可超过2^32,否则会溢出错误
+*/
+zeroFill(val: number | string, num: number = 2):string
+```
