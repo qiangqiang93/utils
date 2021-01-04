@@ -8,6 +8,21 @@ A js library for common utils,一个常用工具库
 npm i @qietuzi/utils --save
 ```
 
+#### arr
+a utils to extends window.location
+```js
+import { arr } from '@qietuzi/utils'
+/* 
+    @name       findItem
+    @desc       arr findItem
+    @params     
+                arr     Array<any>
+                key     string
+                val     any
+    @return     any     arr item
+*/
+arr.findItem()
+```
 #### env
 
 a utils to judge **browser** environment
@@ -41,6 +56,46 @@ env.getEnvs();
 // return all
 ```
 
+#### location
+
+a utils to extends window.location
+
+```js
+import { location } from "@qietuzi/location";
+// avoid confilct with window.location
+import { location as _locltion } from "@qietuzi/location";
+
+/* 
+    @name       getParam
+    @desc       getParam
+    @params     
+                key     string
+                url     string    string[window.location.href]
+    @return     string
+*/
+_locltion.getParam();
+/* 
+    @name       getParams
+    @desc       getParams
+    @params     url     string    string[window.location.href]
+    @return     {
+                    [key: string]: string
+                }
+    waring: when route is hash route, the url params may have # and strings after #
+*/
+_locltion.getParams();
+/* 
+    @name       listParams
+    @desc       listParams some times sign needs to keep the sort
+    @params     url     string     string[window.location.href]
+    @return     Array<{
+                    key: string,
+                    val: string
+                }>
+*/
+_locltion.listParams();
+```
+
 #### lang
 
 a utils to judge **character's** language.
@@ -62,7 +117,7 @@ getEachLangs(str: string): Array<string>
 
 ```js
 import { number } from "@qietuzi/utils";
-/* 
+/*
 // 数字，数字字符串前补零
 // number,number string zero fill
 // zeroFill(9)      =>  '09'
