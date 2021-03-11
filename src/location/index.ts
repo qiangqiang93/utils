@@ -4,8 +4,8 @@ export const location = {
     _getQueryStr(url: string = '') {
         let _url = url || window.location.href
         _url = decodeURIComponent(_url)
-        const index = url.indexOf('?')
-        return url.substring(index + 1)
+        const index = _url.indexOf('?')
+        return _url.substring(index + 1)
     },
     /* 
         @name       listParams

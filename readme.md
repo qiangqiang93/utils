@@ -9,9 +9,11 @@ npm i @qietuzi/utils --save
 ```
 
 #### arr
+
 a utils to extends window.location
+
 ```js
-import { arr } from '@qietuzi/utils'
+import { arr } from "@qietuzi/utils";
 /* 
     @name       findItem
     @desc       arr findItem
@@ -21,8 +23,9 @@ import { arr } from '@qietuzi/utils'
                 val     any
     @return     any     arr item
 */
-arr.findItem()
+arr.findItem();
 ```
+
 #### env
 
 a utils to judge **browser** environment
@@ -61,9 +64,9 @@ env.getEnvs();
 a utils to extends window.location
 
 ```js
-import { location } from "@qietuzi/location";
+import { location } from "@qietuzi/utils";
 // avoid confilct with window.location
-import { location as _locltion } from "@qietuzi/location";
+import { location as _locltion } from "@qietuzi/utils";
 
 /* 
     @name       getParam
