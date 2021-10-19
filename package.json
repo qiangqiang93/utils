@@ -1,6 +1,6 @@
 {
   "name": "@qietuzi/utils",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A js library for common utils",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,8 +14,11 @@
   "author": "qiang",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "@types/jasmine": "^3.5.11",
     "@types/lodash": "^4.14.167",
+    "babel-loader": "^8.2.2",
     "jasmine-core": "^3.5.0",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
@@ -31,6 +34,8 @@
     "url": "https://github.com/qiangqiang93/utils"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.18.3",
     "lodash": "^4.17.20"
   }
 }

@@ -4,7 +4,7 @@ const testUa = (regexp: RegExp) => regexp.test(ua);
 const testVs = (regexp: RegExp) => {
   const matchs = ua.match(regexp);
   if (matchs) {
-    return getMatchedCSSRules
+    return matchs
       .toString()
       .replace(/[^0-9|_.]/g, "")
       .replace(/_/g, ".");
