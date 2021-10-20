@@ -17,10 +17,11 @@ module.exports = {
   },
   devtool: false,
   output: {
-    filename: "index.js",
+    filename: "dist/index.js",
     libraryTarget: "umd",
     path: path.resolve(__dirname, ""),
   },
+  target: ["es5"],
   optimization: {
     usedExports: true,
     minimize: true,
